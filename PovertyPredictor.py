@@ -3,14 +3,14 @@ from data import *
 #dictionary that maps an input factor (Ex: "sexOptions") to its factor index (Ex: 0)
 factorToIndex = {"sexOptions": 0, "ageOptions": 1, "raceOptions": 2, "livingOptions": 3, "educationOptions": 4, "workStatusOptions": 7, "citizenshipOptions": 5, "disabilityOptions": 6}
 #Category dictionaries that map an input category (Ex: "male") to its category index (Ex: 0). For empty values, returns -1
-sexDict = {"empty": -1, "male": 0, "female": 1}
-ageDict = {"empty": -1, "under18": 0, "between18And64": 1, "above64": 2}
-raceDict = {"empty": -1, "white": 0, "black": 1, "nativeAmerican": 2, "asian": 3, "hawaiian": 4, "otherRace": 5, "multiRace": 6, "hispanic": 7, "whiteAlone": 8}
-livDict = {"empty": -1, "married": 0, "femaleHolder": 1, "otherLiving": 2}
-eduDict = {"empty": -1, "lessThanHighSchool": 0, "highSchool": 1, "college": 2, "bachelor": 3}
-workDict = {"empty": -1, "full": 0, "lessFull": 1, "noWork": 2}
-citDict = {"empty": -1, "native": 0, "foreign": 1, "naturalized": 2}
-disDict = {"empty": -1, "yes": 0, "no": 1}
+sexDict = {None: -1, "empty": -1, "male": 0, "female": 1}
+ageDict = {None: -1, "empty": -1, "under18": 0, "between18And64": 1, "above64": 2}
+raceDict = {None: -1, "empty": -1, "white": 0, "black": 1, "nativeAmerican": 2, "asian": 3, "hawaiian": 4, "otherRace": 5, "multiRace": 6, "hispanic": 7, "whiteAlone": 8}
+livDict = {None: -1, "empty": -1, "married": 0, "femaleHolder": 1, "otherLiving": 2}
+eduDict = {None: -1, "empty": -1, "lessThanHighSchool": 0, "highSchool": 1, "college": 2, "bachelor": 3}
+workDict = {None: -1, "empty": -1, "full": 0, "lessFull": 1, "noWork": 2}
+citDict = {None: -1, "empty": -1, "native": 0, "foreign": 1, "naturalized": 2}
+disDict = {None: -1, "empty": -1, "yes": 0, "no": 1}
 #dictionary that maps an input factor index (Ex: 0) to its categoryDictionary (Ex: {"male": 0, "female": 1} (sexDict))
 factorIndexToDict = {0: sexDict, 1: ageDict, 2: raceDict, 3: livDict, 4: eduDict, 7: workDict, 5: citDict, 6: disDict}
 
